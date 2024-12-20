@@ -107,7 +107,7 @@ header div {
       -ms-flex-align: center;
           align-items: center;
 }
-header h1 {
+header div h1 {
   color: white;
   font-family: Inter-VariableFont_opsz, wght, sans-serif;
   font-size: 5rem;
@@ -117,7 +117,7 @@ header h1 {
   font-weight: 700;
   letter-spacing: 8px;
 }
-header p {
+header div p {
   color: white;
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
@@ -126,7 +126,7 @@ header p {
   margin-top: 50px;
   margin-bottom: 70px;
 }
-header .arrow {
+header div .arrow {
   height: 74px; /* Ajusté pour inclure le padding */
   width: 74px; /* Largeur et hauteur égales pour un cercle parfait */
   color: white;
@@ -163,7 +163,7 @@ header nav {
   position: absolute;
   bottom: 0;
 }
-header ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,21 +175,7 @@ header ul {
       justify-content: space-around;
   width: 100%;
 }
-header .choices {
-  padding: 0 45px 0 0px;
-}
-header .choices li {
-  font-family: Inter-VariableFont_opsz, wght, sans-serif;
-  text-transform: uppercase;
-  color: rgb(97, 96, 96);
-  font-size: 1rem;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-header .choices a {
-  color: rgb(255, 255, 255);
-}
-header li {
+header nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +188,51 @@ header li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+}
+header nav .social {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 45px 0 0px;
+}
+header nav .social li {
+  font-size: 2.2rem;
+}
+header nav .social li a {
+  color: rgb(255, 255, 255);
+}
+header nav .social li a:hover {
+  scale: 1.5;
+  -webkit-transition: scale 0.3s ease;
+  transition: scale 0.3s ease;
+}
+header nav .choices {
+  padding: 0 45px 0 0;
+}
+header nav .choices li {
+  font-family: Inter-VariableFont_opsz, wght, sans-serif;
+  text-transform: uppercase;
+  color: rgb(97, 96, 96);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 0 40px;
+}
+header nav .choices li a {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+header nav .choices li:hover {
+  background: rgb(255, 255, 255);
+}
+header nav .choices li:hover a {
+  color: #2e2e2e;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 @font-face {
