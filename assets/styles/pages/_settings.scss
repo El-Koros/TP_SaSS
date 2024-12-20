@@ -1,27 +1,10 @@
 @font-face {
     font-family: "Inter-VariableFont_opsz,wght";
-    font-family:  "Merriweather-Light";
     src: url(assets/fonts/Inter-VariableFont_opsz,wght.ttf);
-    src: url(assets/fonts/Merriweather-Light.ttf);
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-body {
-    background: url(../images/bg.jpg);
-    background-size: cover; /* L'image couvre tout l'écran */
-    background-attachment: fixed; /* L'image reste fixe lors du défilement */
-    background-repeat: no-repeat; /* Pas de répétition de l'image */
-    background-position: center;
 }
 @font-face {
-    font-family: "Inter-VariableFont_opsz,wght", "Merriweather-Light";
-    src: url(assets/fonts/Inter-VariableFont_opsz,wght.ttf);
-    src: url(assets/fonts/Merriweather-Light.ttf);
+    font-family: "Merriweather-LightItalic";
+    src: url(assets/fonts/Merriweather-LightItalic.ttf);
 }
 * {
     margin: 0;
@@ -37,6 +20,9 @@ body {
     background-repeat: no-repeat; /* Pas de répétition de l'image */
     background-position: center;
 }
-h1 {
-    color: white;
+section {
+    margin: 0px auto; 
+    background-color: rgb(255, 255, 255);
+    width: 72%;
+    height: 150vh;
 }

@@ -50,7 +50,7 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 85%;
+        width: 72%;
         position: absolute;
         bottom: 0; 
         ul{
@@ -93,7 +93,8 @@ header{
                 font-size: 1rem;
                 letter-spacing: 1px;
                 font-weight: 600;
-                padding: 0 40px;
+                width: 100%;
+                text-align: center;
         
                 a {
                     width: 100%;
