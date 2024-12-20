@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Inter-VariableFont_opsz,wght", "Merriweather-Light";
+  src: url(assets/fonts/Inter-VariableFont_opsz,wght.ttf);
+  src: url(assets/fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: url(../images/bg.jpg);
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-attachment: fixed; /* L'image reste fixe lors du défilement */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  background-position: center;
+}
+
+h1 {
+  color: white;
+}
+
+.button {
+  background: none;
+  font-size: 0.9rem;
+  padding: 15px 40px;
+  font-weight: 600;
+  font-family: Inter-VariableFont_opsz, wght, serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button:hover {
+  background: black;
+  color: aliceblue;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}/*# sourceMappingURL=index.css.map */
