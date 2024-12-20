@@ -1,5 +1,6 @@
 @font-face {
-    font-family: "Inter-VariableFont_opsz,wght", "Merriweather-Light";
+    font-family: "Inter-VariableFont_opsz,wght";
+    font-family:  "Merriweather-Light";
     src: url(assets/fonts/Inter-VariableFont_opsz,wght.ttf);
     src: url(assets/fonts/Merriweather-Light.ttf);
 }
@@ -16,7 +17,4 @@ body {
     background-attachment: fixed; /* L'image reste fixe lors du défilement */
     background-repeat: no-repeat; /* Pas de répétition de l'image */
     background-position: center;
-}
-h1 {
-    color: white;
 }

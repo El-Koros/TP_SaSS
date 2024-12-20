@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Inter-VariableFont_opsz,wght", "Merriweather-Light";
+  font-family: "Inter-VariableFont_opsz,wght";
+  font-family: "Merriweather-Light";
   src: url(assets/fonts/Inter-VariableFont_opsz,wght.ttf);
   src: url(assets/fonts/Merriweather-Light.ttf);
 }
@@ -21,10 +22,6 @@ body {
   background-position: center;
 }
 
-h1 {
-  color: white;
-}
-
 .button {
   background: none;
   font-size: 0.9rem;
@@ -39,4 +36,42 @@ h1 {
   color: aliceblue;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 300px 150px 0px 150px;
+  height: 100vh;
+}
+header h1 {
+  color: white;
+  font-family: Inter-VariableFont_opsz, wght, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 350px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+header p {
+  color: white;
+  font-family: Merriweather-Light, sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 50px;
+}
+header .arrow {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
