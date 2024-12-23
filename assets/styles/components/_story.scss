@@ -1,9 +1,9 @@
 .story {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
     border-top: 1px solid rgba(0, 0, 0, 0.112);
     height: 100vh;
+
     .story-left {
         border-right: 1px solid rgba(0, 0, 0, 0.112);
     }
@@ -20,11 +20,11 @@
         text-align: center;
         font-family: Inter-VariableFont_opsz,wght, sans-serif;
         font-weight: 700;
-    text-transform: uppercase;
-    width: 50%;
-    margin: 30px auto;
-    line-height: 35px;
-    letter-spacing: 2px   
+        text-transform: uppercase;
+        width: 50%;
+        margin: 30px auto;
+        line-height: 35px;
+        letter-spacing: 2px   
     }
     .img-second {
         background: url(../images/pic02.jpg) no-repeat;
