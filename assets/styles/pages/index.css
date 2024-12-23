@@ -46,22 +46,6 @@ button:hover {
   transition: 0.3s ease;
 }
 
-button {
-  background: none;
-  font-size: 0.9rem;
-  padding: 15px 40px;
-  font-weight: 600;
-  font-family: Inter-VariableFont_opsz, wght, serif;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-button:hover {
-  background: black;
-  color: aliceblue;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
 header {
   position: relative;
   display: -webkit-box;
@@ -360,4 +344,80 @@ header nav .choices li:hover a {
   height: 100%;
   margin: auto;
   border-left: 1px solid rgba(0, 0, 0, 0.112);
+}
+
+.footer {
+  margin: 40px auto 60px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 85vh;
+}
+.footer .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 0 70px;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+  padding-top: 100px;
+}
+.footer .form .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.footer .form input[type=text] {
+  width: 550px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid rgba(121, 121, 121, 0.365);
+}
+.footer .form label {
+  font-size: 1rem;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+  color: rgb(105, 105, 105);
+  font-weight: 600;
+  font-family: Inter-VariableFont_opsz, wght, sans-serif;
+}
+.footer .form textarea {
+  width: 550px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid rgba(121, 121, 121, 0.365);
+}
+.footer .form .btn input[type=submit] {
+  display: block;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  margin: 0;
+  background: none;
+  font-size: 0.9rem;
+  padding: 15px 40px;
+  font-weight: 600;
+  font-family: Inter-VariableFont_opsz, wght, serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer .form .btn input[type=submit]:hover {
+  background: black;
+  color: aliceblue;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }/*# sourceMappingURL=index.css.map */
