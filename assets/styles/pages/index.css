@@ -28,10 +28,9 @@ section {
   margin: 0px auto;
   background-color: rgb(255, 255, 255);
   width: 72%;
-  height: 150vh;
 }
 
-.button {
+button {
   background: none;
   font-size: 0.9rem;
   padding: 15px 40px;
@@ -40,14 +39,14 @@ section {
   text-transform: uppercase;
   cursor: pointer;
 }
-.button:hover {
+button:hover {
   background: black;
   color: aliceblue;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-.button {
+button {
   background: none;
   font-size: 0.9rem;
   padding: 15px 40px;
@@ -56,7 +55,7 @@ section {
   text-transform: uppercase;
   cursor: pointer;
 }
-.button:hover {
+button:hover {
   background: black;
   color: aliceblue;
   -webkit-transition: 0.3s ease;
@@ -200,7 +199,7 @@ header nav .choices li {
   font-family: Inter-VariableFont_opsz, wght, sans-serif;
   text-transform: uppercase;
   color: rgb(97, 96, 96);
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   font-weight: 600;
   width: 100%;
@@ -291,4 +290,74 @@ header nav .choices li:hover a {
 .main-top button {
   margin: 50px 0;
   font-size: 1.2rem;
+}
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.112);
+  height: 100vh;
+}
+.story .story-left {
+  border-right: 1px solid rgba(0, 0, 0, 0.112);
+}
+.story h6 {
+  font-size: 1.1rem;
+  font-family: Merriweather-LightItalic, sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 100px;
+}
+.story h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Inter-VariableFont_opsz, wght, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 30px auto;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+.story .img-second {
+  background: url(../images/pic02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; /* Hauteur définie */
+  max-height: 380px;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.story p {
+  text-align: center;
+  font-weight: 100;
+  font-family: Merriweather-LightItalic, sans-serif;
+  line-height: 30px;
+  font-style: italic;
+  font-size: 1rem;
+  margin: 50px 60px 50px;
+}
+.story .button {
+  text-align: center;
+}
+.story .img-third {
+  background: url(../images/pic03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center; /* Hauteur définie */
+  max-height: 380px;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.112);
 }/*# sourceMappingURL=index.css.map */
