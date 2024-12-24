@@ -58,7 +58,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 300px 150px 0px 150px;
+  padding: 30vh 10vw 0;
   height: 100vh;
 }
 header div {
@@ -79,9 +79,9 @@ header div h1 {
   font-size: 5rem;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 350px;
+  padding: 0 5vw;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
 }
 header div p {
   color: white;
@@ -163,7 +163,7 @@ header nav .social {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 45px 0 0px;
+  padding: 0 45px;
 }
 header nav .social li {
   font-size: 2.2rem;
@@ -172,12 +172,12 @@ header nav .social li a {
   color: rgb(255, 255, 255);
 }
 header nav .social li a:hover {
-  scale: 1.5;
+  scale: 1.2;
   -webkit-transition: scale 0.3s ease;
   transition: scale 0.3s ease;
 }
 header nav .choices {
-  padding: 0 45px 0 0;
+  padding: 0;
 }
 header nav .choices li {
   font-family: Inter-VariableFont_opsz, wght, sans-serif;
@@ -202,6 +202,63 @@ header nav .choices li:hover a {
   transition: color 0.3s ease;
 }
 
+/* MEDIA QUERIES POUR RESPONSIVE DESIGN */
+@media screen and (max-width: 935px) {
+  header {
+    padding: 10vh 5vw 0;
+  }
+  header h1 {
+    font-size: 3.5rem !important; /* Réduit davantage la taille pour tablettes et petits écrans */
+    padding: 0 2vw;
+    letter-spacing: 2px;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  header .arrow {
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+  }
+  header nav {
+    height: 70px;
+  }
+  header nav .social {
+    display: none;
+  }
+  header nav .social .choices {
+    padding: 0;
+  }
+  header nav .choices li {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  header {
+    padding: 8vh 3vw 0;
+  }
+  header h1 {
+    font-size: 2rem !important; /* Encore plus petit pour très petits écrans */
+    padding: 0 1vw;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  header .arrow {
+    height: 40px;
+    width: 40px;
+    font-size: 0.8rem;
+  }
+  header nav {
+    height: 60px;
+  }
+  header nav .choices li {
+    font-size: 0.6rem;
+  }
+  header nav .social {
+    display: none; /* Cache les icônes sociales sur les très petits écrans */
+  }
+}
 .main-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +273,7 @@ header nav .choices li:hover a {
   text-align: center;
   margin: 0 auto;
   width: 85%;
-  height: 150vh;
+  height: auto;
 }
 .main-top h4 {
   position: relative;
@@ -233,7 +290,7 @@ header nav .choices li:hover a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 450px;
+  width: 300%;
   height: 1px;
   background-color: rgba(15, 15, 15, 0.1);
 }
@@ -276,6 +333,75 @@ header nav .choices li:hover a {
   font-size: 1.2rem;
 }
 
+/* MEDIA QUERIES POUR RESPONSIVE DESIGN */
+/* Écrans de taille moyenne (tablettes) */
+@media screen and (max-width: 935px) {
+  .main-top {
+    width: 90%; /* Réduit la largeur */
+  }
+  h4 {
+    font-size: 1.3rem !important; /* Taille réduite */
+    margin: 40px 0 20px;
+  }
+  h4::before, h4::after {
+    width: 100% !important; /* Réduction des lignes avant et après */
+  }
+  h4::before {
+    left: 150px !important;
+  }
+  h4::after {
+    right: 150px !important;
+  }
+  h2 {
+    font-size: 2.5rem !important; /* Taille de titre plus petite */
+    margin: 40px 0 20px;
+  }
+  p {
+    font-size: 0.9rem; /* Texte réduit */
+    line-height: 1.6; /* Espacement des lignes ajusté */
+  }
+  .img-first {
+    min-height: 300px; /* Hauteur réduite */
+  }
+  button {
+    font-size: 0.9rem; /* Bouton plus compact */
+    padding: 8px 16px;
+  }
+}
+/* Écrans de petite taille (smartphones) */
+@media screen and (max-width: 550px) {
+  .main-top {
+    width: 95%; /* Occupe presque toute la largeur */
+  }
+  h4 {
+    font-size: 1rem !important; /* Texte encore plus petit */
+    margin: 30px 0 15px;
+  }
+  h4::before, h4::after {
+    width: 80px !important; /* Lignes avant et après plus courtes */
+  }
+  h4::before {
+    left: -100px !important;
+  }
+  h4::after {
+    right: -100px !important;
+  }
+  h2 {
+    font-size: 2rem !important; /* Taille réduite pour le titre principal */
+    margin: 30px 0 15px;
+  }
+  p {
+    font-size: 0.8rem; /* Texte plus petit */
+    line-height: 1.4;
+  }
+  .img-first {
+    min-height: 200px !important; /* Image encore plus petite */
+  }
+  button {
+    font-size: 0.8rem; /* Bouton compact */
+    padding: 6px 12px;
+  }
+}
 .story {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -299,10 +425,10 @@ header nav .choices li:hover a {
   font-family: Inter-VariableFont_opsz, wght, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  width: 50%;
-  margin: 30px auto;
-  line-height: 35px;
-  letter-spacing: 2px;
+  width: 80%;
+  margin: 20px auto;
+  line-height: 30px;
+  letter-spacing: 1.5px;
 }
 .story .img-second {
   background: url(../images/pic02.jpg) no-repeat;
@@ -318,7 +444,7 @@ header nav .choices li:hover a {
   text-align: center;
   font-weight: 100;
   font-family: Merriweather-LightItalic, sans-serif;
-  line-height: 30px;
+  line-height: 1.6;
   font-style: italic;
   font-size: 1rem;
   margin: 50px 60px 50px;
@@ -338,6 +464,23 @@ header nav .choices li:hover a {
   border-left: 1px solid rgba(0, 0, 0, 0.112);
 }
 
+@media screen and (max-width: 935px) {
+  .story {
+    display: block;
+    height: auto;
+  }
+  .story .img-second, .story .img-third {
+    min-height: 200px; /* Limite la hauteur des images */
+    max-width: 300px;
+  }
+  .story .button {
+    height: 100px;
+  }
+  .story button {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
 .footer {
   margin: 40px auto 60px;
   display: grid;
@@ -374,8 +517,9 @@ header nav .choices li:hover a {
   margin: 0 70px;
 }
 .footer .form input[type=text] {
-  width: 550px;
+  width: 100%;
   height: 60px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid rgba(121, 121, 121, 0.365);
 }
@@ -388,7 +532,9 @@ header nav .choices li:hover a {
   font-family: Inter-VariableFont_opsz, wght, sans-serif;
 }
 .footer .form textarea {
-  width: 550px;
+  resize: none;
+  padding: 10px;
+  width: 100ù;
   height: 200px;
   border-radius: 5px;
   border: 1px solid rgba(121, 121, 121, 0.365);
@@ -415,7 +561,7 @@ header nav .choices li:hover a {
 }
 .footer .social {
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: repeat(4, 25%);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -456,7 +602,7 @@ header nav .choices li:hover a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 20px;
 }
 .footer .social .cols li {
   border: 1px solid gray;
@@ -478,4 +624,78 @@ header nav .choices li:hover a {
   scale: 1.2;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+/* Responsive Design */
+/* Tablettes */
+@media (max-width: 935px) {
+  .footer {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    height: auto; /* Hauteur ajustable */
+  }
+  .footer .form {
+    padding-top: 50px;
+  }
+  .footer .form input[type=text], .footer .form textarea {
+    max-width: 100%; /* Utilisation complète de l'espace */
+  }
+  .footer .form .btn {
+    height: 150px;
+  }
+  .footer .social {
+    border-left: none; /* Suppression de la bordure gauche */
+  }
+  .footer .social .cols {
+    text-align: center; /* Centrage du contenu */
+    height: 120px;
+  }
+  .footer .social .cols h4 {
+    margin: 0 auto 10px; /* Centrage et espacement reduit */
+  }
+  .footer .social .cols p {
+    margin: 0 auto 20px; /* Centré et espacement réduit */
+  }
+  .footer .social .cols ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Centrage des icônes */
+  }
+}
+/* Smartphones */
+@media (max-width: 550px) {
+  .footer {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .footer .form {
+    padding-top: 30px;
+    gap: 30px; /* Réduction de l'espacement entre les éléments */
+  }
+  .footer .form input[type=text], .footer .form textarea {
+    max-width: 100%; /* Largeur pleine */
+  }
+  .footer .form .btn input[type=submit] {
+    font-size: 0.8rem; /* Réduction de la taille */
+    padding: 10px 20px;
+  }
+  .footer .social {
+    padding-top: 20px;
+  }
+  .footer .social .cols {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer .social .cols h4 {
+    font-size: 0.9rem; /* Taille de texte réduite */
+  }
+  .footer .social .cols p {
+    font-size: 1rem; /* Texte plus petit */
+    margin: 0 auto 15px;
+  }
+  .footer .social .cols ul {
+    gap: 10px; /* Réduction de l'espace entre les icônes */
+  }
+  .footer .social .cols li {
+    padding: 8px; /* Icônes plus petites */
+  }
 }/*# sourceMappingURL=index.css.map */

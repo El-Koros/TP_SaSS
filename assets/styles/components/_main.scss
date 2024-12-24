@@ -5,7 +5,7 @@
     text-align: center;
     margin: 0 auto;
     width: 85%;
-    height: 150vh;
+    height: auto;
 
     h4 {
         position: relative;
@@ -22,7 +22,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 450px;
+            width: 300%;
             height: 1px;
             background-color: rgba(15, 15, 15, 0.1);
         }
@@ -71,4 +71,94 @@
         font-size: 1.2rem;
     }
     
+}
+
+/* MEDIA QUERIES POUR RESPONSIVE DESIGN */
+
+/* Écrans de taille moyenne (tablettes) */
+@media screen and (max-width: 935px) {
+    .main-top {
+        width: 90%; /* Réduit la largeur */
+    }
+
+    h4 {
+        font-size: 1.3rem !important; /* Taille réduite */
+        margin: 40px 0 20px;
+
+        &::before,
+        &::after {
+            width: 100% !important; /* Réduction des lignes avant et après */
+        }
+
+        &::before {
+            left: 150px !important;
+        }
+
+        &::after {
+            right: 150px !important;
+        }
+    }
+
+    h2 {
+        font-size: 2.5rem !important; /* Taille de titre plus petite */
+        margin: 40px 0 20px;
+    }
+
+    p {
+        font-size: 0.9rem; /* Texte réduit */
+        line-height: 1.6; /* Espacement des lignes ajusté */
+    }
+
+    .img-first {
+        min-height: 300px; /* Hauteur réduite */
+    }
+
+    button {
+        font-size: 0.9rem; /* Bouton plus compact */
+        padding: 8px 16px;
+    }
+}
+
+/* Écrans de petite taille (smartphones) */
+@media screen and (max-width: 550px) {
+    .main-top {
+        width: 95%; /* Occupe presque toute la largeur */
+    }
+
+    h4 {
+        font-size: 1rem !important; /* Texte encore plus petit */
+        margin: 30px 0 15px;
+
+        &::before,
+        &::after {
+            width: 80px !important; /* Lignes avant et après plus courtes */
+        }
+
+        &::before {
+            left: -100px !important;
+        }
+
+        &::after {
+            right: -100px !important;
+        }
+    }
+
+    h2 {
+        font-size: 2rem !important; /* Taille réduite pour le titre principal */
+        margin: 30px 0 15px;
+    }
+
+    p {
+        font-size: 0.8rem; /* Texte plus petit */
+        line-height: 1.4;
+    }
+
+    .img-first {
+        min-height: 200px !important; /* Image encore plus petite */
+    }
+
+    button {
+        font-size: 0.8rem; /* Bouton compact */
+        padding: 6px 12px;
+    }
 }
