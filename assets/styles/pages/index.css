@@ -16,12 +16,43 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url(../images/bg.jpg);
   background-size: cover; /* L'image couvre tout l'écran */
   background-attachment: fixed; /* L'image reste fixe lors du défilement */
   background-repeat: no-repeat; /* Pas de répétition de l'image */
   background-position: center;
+  text-align: center;
+  font-family: Merriweather-LightItalic, sans-serif;
+  min-width: 1300px;
+  margin: 0 auto;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
 }
 
 section {
@@ -35,7 +66,7 @@ button {
   font-size: 0.9rem;
   padding: 15px 40px;
   font-weight: 600;
-  font-family: Inter-VariableFont_opsz, wght, serif;
+  font-family: Inter-VariableFont_opsz, wght, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -59,7 +90,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 30vh 10vw 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 header div {
   display: -webkit-box;
@@ -72,6 +103,25 @@ header div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-animation: headerAnim 1.5s ease forwards;
+          animation: headerAnim 1.5s ease forwards;
+}
+@-webkit-keyframes headerAnim {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headerAnim {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 header div h1 {
   color: white;
@@ -85,7 +135,7 @@ header div h1 {
 }
 header div p {
   color: white;
-  font-family: Merriweather-Light, sans-serif;
+  font-family: Merriweather-LightItalic, sans-serif;
   font-style: italic;
   font-size: 1.2rem;
   text-align: center;
@@ -179,6 +229,13 @@ header nav .social li a:hover {
 header nav .choices {
   padding: 0;
 }
+header nav .choices:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
+header nav .choices:hover li:not(:hover) a {
+  color: white;
+}
 header nav .choices li {
   font-family: Inter-VariableFont_opsz, wght, sans-serif;
   text-transform: uppercase;
@@ -189,17 +246,21 @@ header nav .choices li {
   width: 100%;
   text-align: center;
 }
-header nav .choices li a {
-  width: 100%;
-  color: rgb(255, 255, 255);
+header nav .choices li:first-child {
+  background: white;
+  color: black;
+}
+header nav .choices li:first-child a {
+  color: black;
 }
 header nav .choices li:hover {
   background: rgb(255, 255, 255);
 }
 header nav .choices li:hover a {
-  color: #2e2e2e;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  color: black;
+}
+header nav .choices li a {
+  color: white;
 }
 
 /* MEDIA QUERIES POUR RESPONSIVE DESIGN */
@@ -549,7 +610,7 @@ header nav .choices li:hover a {
   font-size: 0.9rem;
   padding: 15px 40px;
   font-weight: 600;
-  font-family: Inter-VariableFont_opsz, wght, serif;
+  font-family: Inter-VariableFont_opsz, wght, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
 }

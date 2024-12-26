@@ -52,7 +52,7 @@
                 font-size: 0.9rem;
                 padding: 15px 40px;
                 font-weight: 600;
-                font-family: Inter-VariableFont_opsz,wght, serif;
+                font-family: $font1;
                 text-transform: uppercase;
                 cursor: pointer;
                 
@@ -87,12 +87,12 @@
                 text-transform: uppercase;
                 color: rgb(105, 105, 105);
                 font-weight: 600;
-                font-family: Inter-VariableFont_opsz,wght, sans-serif;
+                font-family: $font1;
                 
             }
             p {
                 font-size: 1.2rem;
-                font-family: Merriweather-LightItalic, sans-serif;
+                font-family:$font2;
                 font-weight: 100;
                 margin-right: 50px;
                 color: rgba(128, 128, 128, 0.457);
